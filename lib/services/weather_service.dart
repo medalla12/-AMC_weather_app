@@ -4,7 +4,7 @@ import 'dart:convert';
 import '../models/weather.dart';
 
 class WeatherService {
-  static const String apiKey = "0978b6de2cfd0242a13ee4d23734b5db";
+  static const String apiKey = "";
   static const String apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 
   static Future<Weather> getWeather(String cityName) async {
@@ -25,4 +25,5 @@ class WeatherService {
       throw Exception('Error fetching weather data: $e');
     }
   }
+
 }
